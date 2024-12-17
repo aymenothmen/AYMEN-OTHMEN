@@ -1,0 +1,522 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 2;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Fait en sorte que le contenu prenne l'espace restant */
+    padding: 2rem;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+}
+
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+.profil-img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50%; /* Rend l'image circulaire */
+    width: 300px;       /*  la taille de l'image  */
+    height: 300px;
+    object-fit: cover;  /* Assure un cadrage de l'image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #d9d9d9;
+}
+
+
+.bio {
+    margin: 1rem auto;
+    max-width: 800px;
+    font-size: 1.1rem;
+}
+
+
+
+.social-links .icons a {
+    margin: 0 0.5rem;
+    color: #333;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.social-links .icons a:hover {
+    color: #4CAF50;
+}
+
+/* Pied de page */
+footer {
+    background: #333;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+/* Section Parcours Académique */
+.parcours {
+    text-align: center;
+    margin: 2.05rem auto;
+    max-width: 900px;
+}
+
+.diplome {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.diplome img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.diplome h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.diplome p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+/* Section Compétences */
+.competences {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.competences ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.competences li {
+    margin-bottom: 1.5rem;
+}
+
+.competences p {
+    font-size: 1.11rem;
+    color: #666;
+}
+
+
+
+
+
+/* Section Stages */
+.stages {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    margin-bottom: -50px;
+}
+
+/* Box pour chaque stage */
+.stage {
+    background-color: #fff; /* Fond blanc */
+    border: 1px solid #ddd; /* Bordure grise légère */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    margin-bottom: 2rem; /* Espacement entre les boîtes */
+    padding: 1.5rem; /* Espacement interne */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet animé */
+}
+
+/* Effet au survol */
+.stage:hover {
+    transform: translateY(-5px); /* Légère élévation */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+.stage h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    padding-right: 100px;
+}
+
+.stage p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.stage .date {
+    float: right;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.stage ul {
+    margin: 1rem 0 1rem 1.5rem;
+    text-align: left; /* Alignement du texte */
+}
+
+.stage ul li {
+    margin-bottom: 0.5rem;
+}
+
+.stage strong {
+    color: #4CAF50;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Section Projets */
+.projets {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    padding-top: 100px;
+}
+.projet {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.projet h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.projet ul {
+    margin-left: 1.5rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.projet ul li {
+    margin-bottom: 0.5rem;
+}
+
+.projet p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+
+
+
+
+/** Passions matiéres sports **/
+.pmq {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pmq h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.text ul {
+    margin-left: 2rem;
+}
+
+.text li {
+    margin-bottom: 0.8rem;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Section principale */
+#quiz-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+#quiz-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+}
+
+/* Questions */
+.question {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.question p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.question label {
+    display: block;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.question label:hover {
+    color: #4CAF50;
+}
+
+/* Bouton de validation */
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* Affichage des résultats */
+.resultat {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #e8f5e9;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    color: #333;
+    line-height: 1.8;
+}
+
+.resultat h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.resultat ul {
+    margin-left: 1.5rem;
+    list-style: none;
+}
+
+.resultat p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+/* Section contact */
+#contact-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact-form h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+#contact-form p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Formulaire */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Bouton d'envoi */
+button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* Message de succès */
+.success-message {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: #062407;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+}
+

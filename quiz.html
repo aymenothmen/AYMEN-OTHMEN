@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz : Développement Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours Académique</a></li>
+                <li><a href="competence.html">Compétences</a></li>
+                <li><a href="Stages.html">Stages</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="passion.html">PSQ</a></li>
+                <li><a href="#">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <form id="quiz-form">
+            <h2>Répondez aux questions suivantes :</h2>
+
+            <!-- Question 1 à 12 -->
+            <div class="question">
+                <p>1. Quelle balise HTML est utilisée pour un paragraphe ?</p>
+                <label><input type="radio" name="q1" value="a">&lt;div&gt;</label>
+                <label><input type="radio" name="q1" value="b">&lt;p&gt;</label>
+                <label><input type="radio" name="q1" value="c">&lt;span&gt;</label>
+            </div>
+
+            <div class="question">
+                <p>2. Que signifie HTML ?</p>
+                <label><input type="radio" name="q2" value="a">Hyperlinks and Text Markup Language</label>
+                <label><input type="radio" name="q2" value="b">Hyper Text Markup Language</label>
+                <label><input type="radio" name="q2" value="c">Home Tool Markup Language</label>
+            </div>
+
+            <div class="question">
+                <p>3. Comment cible-t-on un ID dans CSS ?</p>
+                <label><input type="radio" name="q3" value="a">#id</label>
+                <label><input type="radio" name="q3" value="b">.id</label>
+                <label><input type="radio" name="q3" value="c">id:</label>
+            </div>
+
+            <div class="question">
+                <p>4. Quelle propriété CSS permet de changer la couleur du texte ?</p>
+                <label><input type="radio" name="q4" value="a">font-color</label>
+                <label><input type="radio" name="q4" value="b">color</label>
+                <label><input type="radio" name="q4" value="c">text-color</label>
+            </div>
+
+            <div class="question">
+                <p>5. Quel langage permet de dynamiser une page web ?</p>
+                <label><input type="radio" name="q5" value="a">HTML</label>
+                <label><input type="radio" name="q5" value="b">CSS</label>
+                <label><input type="radio" name="q5" value="c">JavaScript</label>
+            </div>
+
+            <div class="question">
+                <p>6. Quel attribut permet d'ajouter un lien à une balise &lt;a&gt; ?</p>
+                <label><input type="radio" name="q6" value="a">href</label>
+                <label><input type="radio" name="q6" value="b">src</label>
+                <label><input type="radio" name="q6" value="c">link</label>
+            </div>
+
+            <div class="question">
+                <p>7. Que signifie CSS ?</p>
+                <label><input type="radio" name="q7" value="a">Creative Style Sheets</label>
+                <label><input type="radio" name="q7" value="b">Cascading Style Sheets</label>
+                <label><input type="radio" name="q7" value="c">Colorful Style Sheets</label>
+            </div>
+
+            <div class="question">
+                <p>8. Quelle balise est utilisée pour insérer une image ?</p>
+                <label><input type="radio" name="q8" value="a">&lt;img&gt;</label>
+                <label><input type="radio" name="q8" value="b">&lt;image&gt;</label>
+                <label><input type="radio" name="q8" value="c">&lt;src&gt;</label>
+            </div>
+
+            <div class="question">
+                <p>9. Quel élément permet de créer une liste ordonnée en HTML ?</p>
+                <label><input type="radio" name="q9" value="a">&lt;ul&gt;</label>
+                <label><input type="radio" name="q9" value="b">&lt;ol&gt;</label>
+                <label><input type="radio" name="q9" value="c">&lt;li&gt;</label>
+            </div>
+
+            <div class="question">
+                <p>10. Quel est le rôle de JavaScript ?</p>
+                <label><input type="radio" name="q10" value="a">Structurer le contenu</label>
+                <label><input type="radio" name="q10" value="b">Ajouter des interactions</label>
+                <label><input type="radio" name="q10" value="c">Définir les styles</label>
+            </div>
+
+            <div class="question">
+                <p>11. Quelle balise permet de créer un titre de niveau 1 ?</p>
+                <label><input type="radio" name="q11" value="a">&lt;h1&gt;</label>
+                <label><input type="radio" name="q11" value="b">&lt;h2&gt;</label>
+                <label><input type="radio" name="q11" value="c">&lt;header&gt;</label>
+            </div>
+
+            <div class="question">
+                <p>12. Quelle extension est utilisée pour un fichier CSS ?</p>
+                <label><input type="radio" name="q12" value="a">.html</label>
+                <label><input type="radio" name="q12" value="b">.css</label>
+                <label><input type="radio" name="q12" value="c">.js</label>
+            </div>
+
+            <!-- Bouton de validation -->
+            <button type="button" onclick="validerQuizz()">Valider le Quizz</button>
+        </form>
+
+        <!-- Résultat -->
+        <div id="resultat" class="resultat"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Votre Nom. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
